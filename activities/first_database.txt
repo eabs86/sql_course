@@ -1,0 +1,15 @@
+--DDL Data Definition Language
+CREATE TABLE persons(
+  first_name VARCHAR(255),
+  last_name VARCHAR(255),
+  age INT
+);
+
+-- DML Data Manipulation Language 
+INSERT INTO persons VALUES 
+('Yudi', 'Santos', 37),
+('Emmanuel', 'Santos', 37);
+
+SELECT * FROM persons WHERE first_name = 'Emmanuel';
+
+SELECT CONCAT(first_name, ' ',last_name) as full_name from persons;
